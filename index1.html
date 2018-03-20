@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body div {
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <div>asdfdsafl</div>
+</body>
+</html>
+
+<script>
+    window.onload = function () {
+        document.getElementsByTagName("div")[0].style.width = document.body.clientWidth + "px";
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/40 + "px";
+    }
+    window.onresize = function () {
+        document.getElementsByTagName("div")[0].style.width = document.body.clientWidth + "px";
+        document.getElementsByTagName("html")[0].style.fontSize = document.body.clientWidth/40 + "px";
+    }
+</script>
